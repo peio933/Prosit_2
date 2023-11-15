@@ -1,5 +1,5 @@
 #pragma once
-class Liberary2
-{
-};
+
+#include "Crypt.h"
+#include "File.h"
 

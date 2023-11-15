@@ -1,4 +1,5 @@
-#include "Crypt.h"
+#include "Liberary1.h"
+#include "Liberary2.h"
 
 string Crypt::cesar(string txtACoder, int decalage)
 {
@@ -17,7 +18,7 @@ string Crypt::cesar(string txtACoder, int decalage)
 				break;
 			}
 		}
-		if (index == -1)
+		if (index != -1)
 		{
 			txtDecode += alphabet[(index + decalage) % 26];
 		}
@@ -32,7 +33,7 @@ string Crypt::cesar(string txtACoder, int decalage)
 string Crypt::XOR(string txtACoder, char key)
 {
 	string txtDecode;
-	for (int i = 0; i < txtACoder.length(); i++)
+	for (int i = 0; i < txtACoder.size(); i++)
 	{
 		txtDecode += txtACoder[i] ^ (int(key) + i) % 20;
 	}
@@ -42,7 +43,7 @@ string Crypt::XOR(string txtACoder, char key)
 string Crypt::cesarXXOR(string txtAcoder, int decalage, char key, int mode)
 {
 	string txtDecode;
-	if (mode == 0)
+	if (mode == 1)
 	{
 		txtDecode = cesar(txtAcoder, decalage);
 		txtDecode = XOR(txtDecode, key);

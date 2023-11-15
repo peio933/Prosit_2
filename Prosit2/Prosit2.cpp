@@ -3,6 +3,7 @@
 
 int main()
 {
+	setlocale(LC_CTYPE, "fra");
 	cout << "Crypter / Décrypter de fichier" << endl;
 
 	Crypt crypt;
@@ -38,13 +39,13 @@ int main()
 
 			if (inputMode == 1)
 			{
-				cout << "Entrez le texte à crypter :" << endl;
+				cout << "Entrez le texte à crypter :";
 				cin >> txtACoder;
 			}
 
 			if (mode == 1 or mode == 3)
 			{
-				cout << "Entrez le décalage :" << endl;
+				cout << "Entrez le décalage :";
 				cin >> decalage;
 
 				if (modeCode == 2)
@@ -68,11 +69,11 @@ int main()
 
 			if (mode == 2 or mode == 3)
 			{
-				cout << " Entrez la clé de chiffrement : " << endl;
+				cout << " Entrez la clé de chiffrement : ";
 				cin >> key;
 				if (modeCode == 2)
 				{
-					cout << " Entrez la taille du fichier: " << endl;
+					cout << " Entrez la taille du fichier:";
 					cin >> size;
 
 				}

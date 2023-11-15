@@ -1,15 +1,6 @@
 #include "Liberary1.h"
 #include "Liberary2.h"
 
-void File::writeFile(string text, string txt)
-{
-	ofstream File;
-	File.open(text);
-	File << txt;
-	File.close();
-	
-}
-
 string File::readFile(string text)
 {
 	ifstream File;
@@ -56,4 +47,13 @@ string File::readFileBin(string text, const int size)
 	}
 	fclose(file);
 	return s1;
+}
+
+void File::writeFile(string text, string txt)
+{
+	ofstream File;
+	File.open(text);
+	File << txt;
+	File.close();
+
 }

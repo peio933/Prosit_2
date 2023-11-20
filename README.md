@@ -1,8 +1,9 @@
 # Diagramme UML
 
+Avant de rédiger le code, il est essentiel de comprendre les exigences des clients en réalisant plusieurs diagrammes afin de saisir pleinement la portée du projet :
+
 ## Diagramme de cas d'utilisation
 
-Avant de rédiger le code, il est essentiel de comprendre les exigences des clients en réalisant plusieurs diagrammes afin de saisir pleinement la portée du projet :
 
 Voici le diagramme de cas d'utilisation qui représente le cas particulier du scénario professionnel (prosit) :
 
